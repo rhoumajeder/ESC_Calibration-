@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"pushbuttonclibration\startup_stm32f429xx.o"
+"pushbuttonclibration\main.o"
+"pushbuttonclibration\stm32f4xx_it.o"
+"pushbuttonclibration\stm32f4xx_hal_msp.o"
+"pushbuttonclibration\stm32f4xx_hal_tim.o"
+"pushbuttonclibration\stm32f4xx_hal_tim_ex.o"
+"pushbuttonclibration\stm32f4xx_hal_rcc.o"
+"pushbuttonclibration\stm32f4xx_hal_rcc_ex.o"
+"pushbuttonclibration\stm32f4xx_hal_flash.o"
+"pushbuttonclibration\stm32f4xx_hal_flash_ex.o"
+"pushbuttonclibration\stm32f4xx_hal_flash_ramfunc.o"
+"pushbuttonclibration\stm32f4xx_hal_gpio.o"
+"pushbuttonclibration\stm32f4xx_hal_dma_ex.o"
+"pushbuttonclibration\stm32f4xx_hal_dma.o"
+"pushbuttonclibration\stm32f4xx_hal_pwr.o"
+"pushbuttonclibration\stm32f4xx_hal_pwr_ex.o"
+"pushbuttonclibration\stm32f4xx_hal_cortex.o"
+"pushbuttonclibration\stm32f4xx_hal.o"
+"pushbuttonclibration\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "PUSHBUTTONCLIBRATION\PUSHBUTTONCLIBRATION.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PUSHBUTTONCLIBRATION.map" -o PUSHBUTTONCLIBRATION\PUSHBUTTONCLIBRATION.axf
